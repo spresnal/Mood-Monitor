@@ -1,0 +1,7 @@
+<resources>
+    <string name="title_activity_register">Register</string>
+    <string name="action_register">Register</string>
+    <string name="prompt_phoneNum">Ex: 123-456-7899</string>
+    <string name="prompt_firstName">First Name</string>
+    <string name="prompt_lastName">Last Name</string>
+</resources>

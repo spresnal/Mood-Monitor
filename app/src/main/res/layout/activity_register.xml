@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FF089DE3"
+    tools:context="com.example.sam.moodalert.RegisterActivity">
+
+    <!-- Login progress -->
+    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Google plus login
+            <com.google.android.gms.common.SignInButton android:id="@+id/plus_sign_in_button"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp" />
+
+                <LinearLayout android:id="@+id/plus_sign_out_buttons"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:visibility="gone" android:weightSum="2">
+
+                    <Button android:id="@+id/plus_sign_out_button" style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:layout_weight="1" android:text="@string/plus_sign_out" />
+
+                    <Button android:id="@+id/plus_disconnect_button"
+                        style="?android:textAppearanceSmall" android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_weight="1"
+                        android:text="@string/plus_disconnect" />
+
+                </LinearLayout>
+                -->
+
+            <LinearLayout android:id="@+id/email_register_form" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+
+                <TextView android:text="First Name" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF"
+                    android:textStyle="bold" />
+                <AutoCompleteTextView android:id="@+id/firstName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/prompt_firstName" android:textColorHint="#FFFFFF"
+                    android:inputType="text|textCapSentences" android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFFFF"/>
+
+                <TextView android:text="Last Name" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold" />
+                <AutoCompleteTextView android:id="@+id/lastName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/prompt_lastName" android:textColorHint="#FFFFFF"
+                    android:inputType="text|textCapSentences" android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFFFF"/>
+
+                <!--<TextView android:text="Phone Number" android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="#ff000000"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:textStyle="bold"  />-->
+                <!--<AutoCompleteTextView android:id="@+id/phoneNum" android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" android:hint="@string/prompt_phoneNum"-->
+                    <!--android:inputType="phone" android:maxLines="1"-->
+                    <!--android:singleLine="true" />-->
+
+                <!--<TextView android:text="Username" android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="#ff000000"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:textStyle="bold"  />-->
+                <!--<AutoCompleteTextView android:id="@+id/username" android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" android:hint="@string/prompt_user"-->
+                    <!--android:inputType="text" android:maxLines="1"-->
+                    <!--android:singleLine="true" />-->
+
+                <TextView android:text="Email" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"  />
+                <AutoCompleteTextView android:id="@+id/email" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/prompt_email" android:textColorHint="#FFFFFF"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFFFF"/>
+
+                <TextView android:text="Password" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"  />
+                <EditText android:id="@+id/password" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/prompt_password" android:textColorHint="#FFFFFF"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified" android:inputType="textPassword"
+                    android:maxLines="1" android:singleLine="true"
+                    android:textColor="#FFFFFFFF"/>
+
+                <Button android:id="@+id/email_sign_in_button" style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:text="@string/action_register" android:textColorHint="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
